@@ -1,0 +1,31 @@
+<% include ./partials/header.ejs %>
+   <div class="HomePage_MainPage-Container">
+      <div class="HomePage_MainPage_Container-Wrapper">
+         <%if(docs.length==0){%>
+            <h3>NO DOCS AVILABLE</h3>
+        <%}else{%>
+        <%docs.forEach(function(elem){%>
+            <div class="HomePage_MainPage_Container_Wrapper-layer">
+                <a href="/docsDetail/<%=elem._id%>" class="HomePage_MainPage_Container-Wrapper_Dynamic_Section">
+                    <div class="HomePage_MainPage_Container_Wrapper_Dynamic_Section-userHeading">
+                        <div class="HomePage_MainPage_Container_Wrapper_Dynamic_Section_userHeading-docsTitle">
+                           <h1><%=elem.docstitle%></h1>
+                        </div>
+                        <div class="HomePage_MainPage_Container_Wrapper_Dynamic_Section_userHeading_paragraph">
+                           <p><%=elem.docsContent.substring(0,350)%></p>
+                        </div>
+                    </div>
+                    <div class="HomePage_MainPage_Container-Wrapper_Dynamic_Section-docsPhoto">
+                       <img src="/docsPics/<%=elem.docsPic%>" alt="">
+                    </div>
+                </a>
+                <div class="HomePage_MainPage_Container_Wrapper-layer-links">
+                    <h3><a href="/like/<%=elem._id%>"><i class="ri-heart-line"></i></a></h3>
+                    <h3><a href="/save/<%=elem._id%>"><i class="ri-bookmark-line"></i></a></h3>
+                </div>
+             </div>
+         <%})%>   
+        <%}%>
+      </div>
+   </div>
+<% include ./partials/footer.ejs %>

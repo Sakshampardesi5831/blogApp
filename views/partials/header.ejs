@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Community</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="../stylesheets/style.css">
+</head>
+<body>
+   <div class="HomePage_NavBar-Container">
+     <div class="HomePage_NavBar_Container-Wrapper">
+         <div class="HomePage_NavBar_Container_Wrapper-Logo">
+            <div class="HomePage_NavBar_Container_Wrapper-Logo-photo">
+                <img src="../images/1_psYl0y9DUzZWtHzFJLIvTw-removebg-preview.png" alt="">
+            </div>
+            <div class="HomePage_NavBar_Container_Wrapper-Logo-name">
+                <h1>Dev Community</h1>
+            </div>
+         </div>
+          <div class="HomePage_NavBar_Container_Wrapper-links">
+              <a href="/homepage">HomePage</a>
+              <a href="/">Main Page</a>
+              <a href="/Others">Others</a>
+              <a href="/resources">Resources</a>
+          </div>
+         <div class="HomePage_NavBar_Container_Wrapper-profile">
+            <a href="/docs" id="docs"><i class="ri-edit-box-line"></i>Create Docs</a>
+             <a href="/profile" id="profile_photo">
+                <div class="profile_photo-imgtag">
+                    <img src="/docsPics/<%=user.pic%>" alt="">
+                </div>
+                <h3><%=user.username%></h3>
+             </a>
+         </div>
+     </div>     
+   </div>

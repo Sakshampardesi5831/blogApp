@@ -1,0 +1,19 @@
+<% include ./partials/header.ejs %>
+<div class="docsDetail_Container">
+    <div class="docsDetail_Container_title"><h2><%=detail.docstitle%></h2></div>
+   <div class="docsDetail_Container_photo-section">
+      <img src="/docsPics/<%=detail.docsPic%>" alt="">
+   </div>
+   <div class="docsDetail_Container_userInfo">
+          <div class="docsDetail_Container_userInfo-userPhotoSection">
+            <img src="" alt="">  
+          </div>
+          <div class="docsDetail_Container_userInfo_userName"><h3><%=user.username%></h3></div>
+   </div>
+   <div class="docsDetail_Container_content">
+       <p><%=detail.docsContent%></p>
+   </div>
+</div>
+
+
+<% include ./partials/footer.ejs %>

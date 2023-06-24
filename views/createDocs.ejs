@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Story-Dev Community</title>
+    <link rel="stylesheet" href="../stylesheets/style.css" />
+  </head>
+  <body>
+    <div class="createDocs_Nav-Container">
+      <div class="createDocs_Nav_Container-Wrapper">
+        <div class="createDocs_Nav_Container_Wrapper_logoHeading-Wrapper">
+          <div class="createDocs_Nav_Container_Wrapper-logo">
+            <img
+              src="../images/1_psYl0y9DUzZWtHzFJLIvTw-removebg-preview.png"
+              alt=""
+            />
+          </div>
+          <p>Draft by :- <%=user.username%></p>
+        </div>
+        <div class="createDocs_Nav_Container_Wrapper_Profile_pic">
+            <div class="createDocs_Nav_Container_Wrapper_ProfilePhoto">
+                 <img src="" alt="">
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="createDocs_Container">
+      <div class="createDocs_Container-Wrapper">
+        <form id="createDocs-form" action="/docs" method="post" enctype="multipart/form-data">
+             <input type="text" name="title" id="docs_title" placeholder="Enter your Title" required>
+             <label for="images" class="drop-container">
+              <span class="drop-title">Upload your Poster here</span>
+              or
+              <input type="file" id="images" name="image" accept="image/*" required>
+            </label>
+            <textarea name="docsContent" placeholder="Tell your Story" required></textarea>
+            <div class="button">
+               <button>Publish</button>
+            </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

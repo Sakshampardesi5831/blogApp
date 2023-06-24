@@ -1,0 +1,1364 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap");
+@import url("https://fonts.cdnfonts.com/css/gt-super-ds-trial");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+.Nav_Container {
+  width: 100%;
+  min-height: 10vh;
+}
+.Nav_Container_Wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 15vh;
+  border-bottom: 2px solid #191919;
+  padding: 1rem 1rem;
+}
+.Nav_Container_Wrapper-Logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 100%;
+}
+.Nav_Container_Wrapper_Logo-image {
+  width: 30%;
+  height: 100%;
+  padding: 1rem 1rem;
+}
+.Nav_Container_Wrapper_Logo-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.Nav_Container_Wrapper_Title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  font-size: 2.5rem;
+  font-family: "Oswald", sans-serif;
+}
+.Nav_Container_Wrapper_links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  width: 50%;
+  height: 60%;
+  font-size: 2rem;
+}
+.Nav_Container_Wrapper_links > a {
+  text-decoration: none;
+  color: #191919;
+}
+#registerButton {
+  padding: 1rem 1.5rem;
+  background-color: #191919;
+  color: #fff;
+  border-radius: 5rem;
+}
+.Main_Part {
+  width: 100%;
+  min-height: 85vh;
+}
+.Main_Part-Wrapper {
+  display: flex;
+  width: 100%;
+  height: 85vh;
+}
+.Main_Part_Wrapper_Content-Heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  height: 100%;
+}
+.Main_Part_Wrapper_Content-Image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 100%;
+  padding: 2rem 2rem;
+}
+.Main_Part_Wrapper_Content-Image img {
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+  object-position: center;
+}
+.Main_Part_Wrapper_Content_Heading_Holder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5rem;
+  width: 80%;
+  height: 80%;
+  padding: 1rem 1rem;
+}
+.Main_Part_Wrapper_Content_Heading_Holder > h1 {
+  font-size: 9rem;
+  font-family: "GT Super Ds Trial", sans-serif;
+  font-weight: 400;
+}
+.Main_Part_Wrapper_Content_Heading_Holder > p {
+  font-size: 4rem;
+  font-family: "GT Super Txt Trial", sans-serif;
+  color: #292929;
+}
+.Main_Part_Wrapper_Content_Heading_Holder > a {
+  width: 40%;
+  text-align: center;
+  font-size: 3rem;
+  padding: 1rem 1rem;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5rem;
+}
+.HomePage_NavBar-Container {
+  width: 100%;
+  min-height: 15vh;
+}
+.HomePage_NavBar_Container-Wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 10vh;
+  padding: 1rem 2rem;
+}
+.HomePage_NavBar_Container_Wrapper-Logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  width: 25%;
+  height: 100%;
+  padding: 0rem 1rem;
+}
+.HomePage_NavBar_Container_Wrapper-Logo-photo{
+  width: 20%;
+  height: 95%;
+}
+.HomePage_NavBar_Container_Wrapper-Logo-photo img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+} 
+.HomePage_NavBar_Container_Wrapper-Logo-name{
+  width: 70%;
+  height: 95%;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  font-family: "GT Super Txt Trial", sans-serif;
+}
+.HomePage_NavBar_Container_Wrapper-links{
+  width: 35%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 2rem;
+}
+.HomePage_NavBar_Container_Wrapper-links a{
+  text-decoration: none;
+  color: #000;
+  font-family: "GT Super Txt Trial", sans-serif;
+}
+.HomePage_NavBar_Container_Wrapper-profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  height: 100%;
+  gap: 2rem;
+}
+.HomePage_NavBar_Container_Wrapper-profile > #docs {
+  font-size: 2.5rem;
+  text-decoration: none;
+  color: #191919;
+}
+.HomePage_NavBar_Container_Wrapper-profile > #profile_photo {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+  align-items: center;
+  padding: 0rem 1rem;
+  width: 40%;
+  height: 90%;
+  text-decoration: none;
+  color: #111;
+}
+.profile_photo-imgtag {
+  width: 30%;
+  height: 95%;
+  border-radius: 50%;
+  padding: 0.5rem;
+}
+.profile_photo-imgtag img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  object-position: center;
+  border-radius: 50%;
+}
+.HomePage_NavBar_Container_Wrapper-profile > #profile_photo h3 {
+  font-size: 3rem;
+}
+
+
+.HomePage_MainPage-Container {
+  width: 100%;
+  min-height: 85vh;
+}
+.HomePage_MainPage_Container-Wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 85vh;
+}
+
+.HomePage_MainPage_Container_Wrapper-layer {
+  width: 80%;
+  height: 40vh;
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* gap: 2rem; */
+  /* border: 2px solid #e8e8e8; */
+  padding: 1.2rem 0rem;
+}
+.HomePage_MainPage_Container-Wrapper_Dynamic_Section {
+  width: 100%;
+  height: 80%;
+  text-decoration: none;
+  color: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  padding: 0.8rem 0.8rem;
+}
+/* .HomePage_MainPage_Container-Wrapper_Dynamic_Section:hover{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+} */
+.HomePage_MainPage_Container_Wrapper_Dynamic_Section-userHeading {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.HomePage_MainPage_Container-Wrapper_Dynamic_Section-docsPhoto {
+  width: 20%;
+  height: 100%;
+  padding: 2rem;
+}
+.HomePage_MainPage_Container-Wrapper_Dynamic_Section-docsPhoto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.HomePage_MainPage_Container_Wrapper_Dynamic_Section_userHeading-docsTitle {
+  width: 100%;
+  height: 30%;
+  font-size: 1.5rem;
+  font-family: "GT Super Txt Trial", sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0.5rem 0.5rem;
+}
+.HomePage_MainPage_Container_Wrapper_Dynamic_Section_userHeading_paragraph {
+  width: 100%;
+  height: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.HomePage_MainPage_Container_Wrapper_Dynamic_Section_userHeading_paragraph > p {
+  width: 100%;
+  height: 100%;
+  font-size: 2rem;
+  display: flex;
+  padding: 1.5rem 0.5rem;
+}
+.HomePage_MainPage_Container_Wrapper-layer-links {
+  width: 92%;
+  height: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem 3rem;
+}
+.HomePage_MainPage_Container_Wrapper-layer-links > h3 {
+  width: 5%;
+  height: 90%;
+  background-color: #fff;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 50%;
+}
+.HomePage_MainPage_Container_Wrapper-layer-links > h3 > a {
+  text-decoration: none;
+  color: #191919;
+}
+/* .HomePage_MainPage_Container_Wrapper_Dynamic_Section_userHeading-docstitle{
+  width: 100%;
+  height: 100%;
+  background-color: yellow;
+  font-size: 2.5rem;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0.5rem;
+  font-family: 'GT Super Txt Trial', sans-serif;
+} */
+/*----------------------------------------------*/
+/*----------------------------------------------*/
+.createDocs_Nav-Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 10vh;
+}
+.createDocs_Nav_Container-Wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  height: 10vh;
+  /* background-color: red; */
+  padding: 0rem 1rem;
+  border-bottom: 1px solid #191919;
+}
+.createDocs_Nav_Container_Wrapper_logoHeading-Wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 100%;
+  padding: 0 1rem;
+  gap: 1.5rem;
+}
+.createDocs_Nav_Container_Wrapper_logoHeading-Wrapper > p {
+  font-size: 2rem;
+}
+.createDocs_Nav_Container_Wrapper-logo {
+  width: 25%;
+  height: 80%;
+  padding: 0.5rem 0.5rem;
+}
+.createDocs_Nav_Container_Wrapper-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.createDocs_Nav_Container_Wrapper_Profile_pic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5%;
+  height: 80%;
+  /* background-color: yellow; */
+}
+.createDocs_Nav_Container_Wrapper_ProfilePhoto {
+  width: 80%;
+  height: 80%;
+  /* background-color: aquamarine; */
+  border-radius: 50%;
+}
+.createDocs_Nav_Container_Wrapper_ProfilePhoto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+}
+.createDocs_Container {
+  width: 100%;
+  min-height: 100vh;
+  /* background-color: antiquewhite; */
+}
+.createDocs_Container-Wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+.createDocs_Container-Wrapper #createDocs-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  width: 80%;
+  height: 100%;
+  padding: 2rem 0rem;
+}
+.createDocs_Container-Wrapper #createDocs-form #docs_title {
+  width: 80%;
+  height: 12%;
+  background-color: #fff;
+  font-size: 4rem;
+  border: none;
+  border-bottom: 1px solid #000;
+  padding: 0rem 1rem;
+  font-weight: 700;
+}
+.createDocs_form-photo_preview {
+  width: 50%;
+  height: 60%;
+  border: 2px dashed #000;
+  margin-top: 1rem;
+}
+.createDocs_form-fileInput {
+  width: 80%;
+  height: 20%;
+  background-color: aliceblue;
+}
+.drop-container {
+  position: relative;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 200px;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px dashed #555;
+  color: #444;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out, border 0.2s ease-in-out;
+  font-size: 3rem;
+}
+
+.drop-container:hover {
+  background: #eee;
+  border-color: #111;
+}
+
+.drop-container:hover .drop-title {
+  color: #222;
+}
+
+.drop-title {
+  color: #444;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  transition: color 0.2s ease-in-out;
+}
+
+input[type="file"] {
+  width: 350px;
+  max-width: 100%;
+  color: #444;
+  padding: 5px;
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid #555;
+}
+
+input[type="file"]::file-selector-button {
+  margin-right: 20px;
+  border: none;
+  background: #084cdf;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+input[type="file"]::file-selector-button:hover {
+  background: #0d45a5;
+}
+
+.createDocs_Container-Wrapper #createDocs-form textarea {
+  resize: none;
+  width: 80%;
+  min-height: 40%;
+  font-size: 3rem;
+  font-family: "GT Super Ds Trial", sans-serif;
+  padding: 1rem 1rem;
+  border: none;
+  border-bottom: 2px solid #000;
+}
+.createDocs_Container-Wrapper #createDocs-form .button {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  height: 15%;
+  padding: 0 1rem;
+}
+.createDocs_Container-Wrapper #createDocs-form .button button {
+  width: 20%;
+  height: 60%;
+  background-color: #1a8917;
+  color: #fff;
+  font-size: 2rem;
+  border-radius: 3rem;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+/*----------------------------------------------------------------------------*/
+.register_Container {
+  width: 100%;
+  min-height: 100vh;
+}
+.register_Container-Wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #191919;
+}
+.register_Container_Wrapper-registerForm {
+  width: 40%;
+  height: 80%;
+  background-color: #fff;
+  border-radius: 2rem;
+}
+.register_Container_Wrapper-registerForm-logoSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  height: 15%;
+}
+.register_Container_Wrapper-registerForm-logoSection > h3 {
+  font-size: 2.5rem;
+  font-family: "GT Super Ds Trial", sans-serif;
+}
+
+.register_Container_Wrapper_registerForm_logo {
+  width: 15%;
+  height: 90%;
+}
+.register_Container_Wrapper_registerForm_logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.register_Container_Wrapper_registerForm-form {
+  width: 100%;
+  height: 85%;
+}
+.register_Container_Wrapper_registerForm-form #form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  width: 100%;
+  height: 100%;
+}
+.register_Container_Wrapper_registerForm-form #form input {
+  width: 80%;
+  height: 15%;
+  font-size: 2.5rem;
+  padding: 0rem 1rem;
+  border-radius: 2rem;
+  border: none;
+  border-bottom: 1px solid #000;
+}
+.register_Container_Wrapper_registerForm-form #form button {
+  width: 80%;
+  height: 10%;
+  font-size: 2.5rem;
+  background-color: #1a8917;
+  color: #fff;
+  border-radius: 3rem;
+  border: none;
+}
+/*--------------------------------------------------------------------------*/
+.login_Container {
+  width: 100%;
+  min-height: 100vh;
+}
+.login_Container_Wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #191919;
+}
+.login_Container_Wrapper-Box {
+  width: 40%;
+  height: 80%;
+  background-color: #fff;
+  border-radius: 2rem;
+}
+.login_Container_Wrapper_Box-userHeading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  height: 15%;
+}
+.login_Container_Wrapper_Box-userHeading h3 {
+  font-size: 3rem;
+  font-family: "GT Super Ds Trial", sans-serif;
+}
+.login_Container_Wrapper_Box_userheading-Logo {
+  width: 15%;
+  height: 90%;
+}
+.login_Container_Wrapper_Box_userheading-Logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.login_Container_Wrapper_Box-form {
+  width: 100%;
+  height: 85%;
+}
+.login_Container_Wrapper_Box-form #form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  gap: 3rem;
+  font-size: 3rem;
+}
+.login_Container_Wrapper_Box-form #form input {
+  width: 80%;
+  height: 15%;
+  font-size: 3rem;
+  border-radius: 2.5rem;
+  padding: 0rem 1rem;
+  border: none;
+  border-bottom: 1px solid #000;
+}
+.login_Container_Wrapper_Box-form #form button {
+  width: 70%;
+  height: 12%;
+  background-color: #1a8917;
+  color: #fff;
+  font-size: 3rem;
+  border-radius: 3rem;
+}
+/*-----------------------------------------------------------------------*/
+.docsDetail_Container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  min-height: 85vh;
+}
+.docsDetail_Container_photo-section {
+  width: 35%;
+  height: 50vh;
+}
+.docsDetail_Container_photo-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.docsDetail_Container_userInfo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 80%;
+  height: 15vh;
+  /* border: 2px solid #000; */
+  gap: 2rem;
+  padding: 0rem 2rem;
+}
+.docsDetail_Container_userInfo-userPhotoSection {
+  width: 10%;
+  height: 90%;
+  border-radius: 50%;
+  border: 1px solid #000;
+  padding: 1.5rem;
+}
+.docsDetail_Container_userInfo-userPhotoSection img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+}
+.docsDetail_Container_userInfo_userName {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 35%;
+  height: 90%;
+  font-size: 2.5rem;
+  font-family: "GT Super Ds Trial", sans-serif;
+}
+.docsDetail_Container_content {
+  width: 80%;
+  min-height: 40vh;
+  padding: 0rem 1.5rem;
+  display: flex;
+  align-items: center;
+  font-weight: 200;
+}
+.docsDetail_Container_content p {
+  font-size: 2.5rem;
+  font-family: "Oswald", sans-serif;
+}
+.docsDetail_Container_title {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  height: 10vh;
+  padding: 0rem 1rem;
+}
+.docsDetail_Container_title h2 {
+  font-size: 4rem;
+  font-family: "GT Super Ds Trial", sans-serif;
+}
+/*--------------------------------------------------------------------------------------*/
+.profile_Container {
+  width: 100%;
+  min-height: 85vh;
+}
+.profile_Container-Wrapper {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 85vh;
+  /* border: 2px solid red; */
+}
+.profile-Container-Wrapper-StoriesSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  width: 60%;
+  height: 100%;
+  /* background-color: #ddc9c9; */
+  overflow: hidden;
+  overflow-y: auto;
+  border: 2px solid #e8e8e8;
+}
+
+.profile_Container_Wrapper_StoriesSection-Username {
+  width: 90%;
+  height: 15%;
+  /* border: 2px solid blue; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 3rem;
+  font-family: "GT Super Ds Trial", sans-serif;
+  padding: 0rem 1rem;
+}
+.profile_Container_Wrapper_StoriesSection-Username > h1 {
+  font-weight: 300;
+}
+.profile_Container_Wrapper_StoriesSection-Username > h2 {
+  padding-top: 1rem;
+  font-size: 3rem;
+  color: #1a8917;
+  font-weight: 200;
+}
+.profile_Container_Wrapper_StoriesSection-dynamicSection {
+  display: flex;
+  gap: 2rem;
+  width: 90%;
+  height: 45%;
+  border: 2px solid #e8e8e8;
+  text-decoration: none;
+  color: #191919;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  background-color: #fff;
+}
+.profile_Container_Wrapper_StoriesSection_dynamicSection-content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  width: 70%;
+  height: 100%;
+  /* background-color: blueviolet; */
+}
+.profile-Container-Wrapper-StoriesSection_dynamicSection-UploadPhoto {
+  width: 30%;
+  height: 100%;
+  /* background-color: green; */
+  padding: 1.5rem 1.5rem;
+}
+.profile-Container-Wrapper-StoriesSection_dynamicSection-UploadPhoto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.profile_Container_Wrapper_StoriesSection_dynamicSection-story {
+  width: 100%;
+  height: 95%;
+  /* background-color: antiquewhite; */
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.profile_Container_Wrapper_StoriesSection_dynamicSection_story-heading {
+  width: 100%;
+  height: 35%;
+  font-size: 1.8rem;
+  padding: 0rem 1rem;
+  /* background-color: red; */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  font-family: "GT Super Ds Trial", sans-serif;
+}
+.profile_Container_Wrapper_StoriesSection_dynamicSection_story-paragraph {
+  width: 100%;
+  height: 50%;
+  padding: 0rem 1.5rem;
+  font-size: 2rem;
+  display: flex;
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+}
+.profile_Container_Wrapper_SideNav {
+  position: sticky;
+  right: 0%;
+  top: 0%;
+  width: 35%;
+  height: 100%;
+  border: 2px solid #e8e8e8;
+}
+.profile_Container_Wrapper_SideNav-userProfilePhoto_Wrapper {
+  width: 100%;
+  height: 30%;
+  padding: 0.5rem 0.5rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+.profile_Container_Wrapper_SideNav_userProfilePhoto_Wrapper-userPhoto {
+  width: 20%;
+  height: 60%;
+  border-radius: 50%;
+}
+.profile_Container_Wrapper_SideNav_userProfilePhoto_Wrapper-userPhoto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+}
+.profile_Container_Wrapper_SideNav-userProfilePhoto_Wrapper-name {
+  width: 100%;
+  height: 20%;
+  font-size: 1rem;
+  display: flex;
+  font-family: "GT Super Ds Trial", sans-serif;
+  padding: 0rem 1rem;
+}
+.profile_Container_Wrapper_SideNav-userProfilePhoto_Wrapper-name h1 {
+  font-weight: 300;
+}
+.profile_Container_Wrapper_SideNav-editLink {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 0rem 2rem;
+}
+.profile_Container_Wrapper_SideNav-editLink a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #61ae60;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-family: "GT Super Ds Trial", sans-serif;
+}
+.profile_Container_Wrapper_SideNav-descriptionCreatedDocsList {
+  width: 100%;
+  height: 60%;
+  /* background-color: red; */
+  font-size: 1.8rem;
+  line-height: 3rem;
+  padding: 1rem;
+  font-family: "Oswald", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.profile_Container_Wrapper_SideNav_description-paragraphSection {
+  width: 100%;
+  height: 50%;
+  /* background-color: yellow; */
+  padding: 1rem;
+}
+
+/*--------------------edit profile Functionality----------------------------------------------------------*/
+.profile_Container_Wrapper_SideNav_description-List {
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+  overflow-y: auto;
+  /* background-color: #fff; */
+  padding: 0.5rem 0.5rem;
+}
+.profile_Container_Wrapper_SideNav_description-List ul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 80%;
+  /* background-color:blue; */
+  overflow: hidden;
+  overflow-y: auto;
+  gap: 0.5rem;
+}
+.profile_Container_Wrapper_SideNav_description-List ul::-webkit-scrollbar {
+  display: none;
+}
+.profile_Container_Wrapper_SideNav_description-List h1 {
+  font-size: 1.5rem;
+  color: #61ae60;
+}
+.profile_Container_Wrapper_SideNav_description-List ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem 1rem;
+  width: 100%;
+  height: 40%;
+  /* background-color: antiquewhite; */
+}
+.profile_Container_Wrapper_SideNav_description-List ul li .list_links {
+  width: 20%;
+  height: 90%;
+  /* background-color: yellow; */
+  display: flex;
+  justify-content: end;
+  gap: 2rem;
+  align-items: center;
+  padding: 0rem 1rem;
+}
+.profile_Container_Wrapper_SideNav_description-List ul li .list_links #edit {
+  text-decoration: none;
+  color: #1a8917;
+}
+.profile_Container_Wrapper_SideNav_description-List ul li .list_links #delete {
+  text-decoration: none;
+  color: red;
+}
+/*------------------------------------------------------------------------------*/
+.editDocs_Container {
+  width: 100%;
+  min-height: 85vh;
+}
+.editDocs_Container-Wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 85vh;
+  gap: 2rem;
+  /* border: 2px solid #e8e8ee; */
+}
+.editDocs_Container-Wrapper-formSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+  /* align-items: center; */
+  width: 60%;
+  height: 100%;
+  border: 2px solid #e8e8e8;
+}
+.editDocs_Container-Wrapper-formSection-heading {
+  width: 90%;
+  height: 15%;
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  padding: 0rem 2rem;
+  font-family: "Oswald", sans-serif;
+}
+.editDocs_Container-Wrapper-formSection-heading h1 {
+  font-weight: 300;
+}
+.editDocs_Container-Wrapper-formSection form {
+  width: 95%;
+  height: 100%;
+  padding: 0rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  /* border: 2px solid red; */
+}
+.editDocs_Container-Wrapper-formSection-updatePoster {
+  width: 95%;
+  height: 40%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0rem 2rem;
+  gap: 3rem;
+}
+.editDocs_Container-Wrapper_formSection_updatePoster-photo {
+  width: 50%;
+  height: 90%;
+  /* border: 2px solid #000; */
+  border-radius: 2rem;
+}
+.editDocs_Container-Wrapper_formSection_updatePoster-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  border-radius: 2rem;
+}
+.editDocs_Container-Wrapper-formSection-updatePoster input {
+  display: none;
+}
+.editDocs_Container-Wrapper-formSection-updatePoster label {
+  font-size: 2.5rem;
+  font-family: "GT Super Ds Trial", sans-serif;
+  color: #1a8917;
+}
+.editDocs_Container-Wrapper-formSection-titleAndParagraph {
+  width: 95%;
+  height: 55%;
+  padding: 0rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.editDocs_Container-Wrapper-formSection_titleAndParagraph-title {
+  width: 95%;
+  height: 25%;
+  display: flex;
+  align-items: center;
+}
+.editDocs_Container-Wrapper-formSection_titleAndParagraph-title input {
+  width: 100%;
+  height: 90%;
+  font-size: 2rem;
+  /* border-radius: 1rem; */
+  padding: 0rem 2rem;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #444;
+}
+.editDocs_Container-Wrapper-formSection_titleAndParagraph-paragraph {
+  width: 95%;
+  height: 70%;
+  /* border: 2px solid #000; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.editDocs_Container-Wrapper-formSection_titleAndParagraph-paragraph textarea {
+  width: 100%;
+  height: 100%;
+  font-size: 2rem;
+  padding: 0.5rem 2rem;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #444;
+}
+.editDocs_Container-Wrapper-formSection_titleAndParagraph-paragraph
+  textarea
+  ::-webkit-scrollbar {
+  display: none;
+}
+.editDocs_Container-Wrapper-formSection form .button {
+  position: absolute;
+  width: 30%;
+  height: 10%;
+  right: 2%;
+  top: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.editDocs_Container-Wrapper-formSection form .button button {
+  width: 70%;
+  height: 70%;
+  background-color: #1a8917;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 2rem;
+  font-size: 2rem;
+  font-family: "GT Super Ds Trial", sans-serif;
+  font-weight: 200;
+}
+/*---------------------------------------------------------------------------*/
+.updateUserContainer {
+  width: 100%;
+  min-height: 85vh;
+}
+.updateUserContainer-Wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  width: 100%;
+  height: 85vh;
+  /* border: 2px solid red; */
+}
+.updateUserContainer_Wrapper-updateProfileSection {
+  /* position: relative; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  height: 100%;
+  border: 2px solid #e8e8e8;
+  padding: 2rem 0rem;
+}
+.updateUserContainer_Wrapper_updateProfileSection-setting {
+  width: 90%;
+  height: 20%;
+  /* border: 2px solid blue; */
+  font-size: 3rem;
+  padding: 1rem 1rem;
+  display: flex;
+  align-items: center;
+  font-family: "GT Super Ds Trial", sans-serif;
+}
+.updateUserContainer_Wrapper_updateProfileSection_form {
+  width: 90%;
+  height: 80%;
+  /* border: 2px solid blue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 1rem;
+}
+.updateUserContainer_Wrapper_updateProfileSection_form form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+  /* border: 2px solid pink; */
+  padding: 0.5rem 0rem;
+  overflow: hidden;
+  overflow-y: auto;
+  gap: 1rem;
+}
+
+.updateUserContainer_Wrapper_updateProfileSection_form_form-data {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+  width: 90%;
+  height: 30%;
+  /* border: 3px solid #000; */
+  padding: 0rem 2rem;
+  gap: 5rem;
+}
+.updateUserContainer_Wrapper_updateProfileSection_form_form-data h4 {
+  width: 50%;
+  height: 40%;
+  background-color: #ffff;
+  font-size: 2rem;
+  border: none;
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  font-family: "GT Super Ds Trial", sans-serif;
+  font-weight: 200;
+  color: #61ae60;
+  cursor: pointer;
+  user-select: none;
+}
+.updateUserContainer_Wrapper_updateProfileSection_form_form-data-profilePhoto {
+  width: 20%;
+  height: 90%;
+  /* border: 2px solid black; */
+  border: 1px solid #e8e8e8;
+  border-radius: 50%;
+}
+.updateUserContainer_Wrapper_updateProfileSection_form_form-data-profilePhoto
+  img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+}
+.updateUserContainer_Wrapper_updateProfileSection_form-heading {
+  width: 30%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  padding: 0rem 1.5rem;
+  font-size: 1.5rem;
+  font-family: "GT Super Ds Trial", sans-serif;
+  color: #4e4c4c;
+}
+.updateUserContainer_Wrapper_updateProfileSection_form_form-data label {
+  font-size: 2.5rem;
+  color: #61ae60;
+  font-weight: 300;
+  font-family: "GT Super Ds Trial", sans-serif;
+}
+.updateUserContainer_Wrapper_updateProfileSection_form_form-data #file {
+  display: none;
+}
+.updateUserContainer_Wrapper_updateProfileSection_form-textArea {
+  width: 80%;
+  height: 40%;
+  /* border: 2px solid #000; */
+  padding: 1rem 2rem;
+}
+.updateUserContainer_Wrapper_updateProfileSection_form-textArea textarea {
+  width: 100%;
+  height: 100%;
+  font-size: 1.5rem;
+  padding: 1rem 1rem;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #000;
+}
+.updateUserContainer_Wrapper_updateProfileSection_form-button {
+  width: 80%;
+  height: 15%;
+  display: flex;
+  align-items: center;
+  padding: 0rem 2rem;
+}
+.updateUserContainer_Wrapper_updateProfileSection_form-button button {
+  width: 30%;
+  height: 90%;
+  background-color: #1a8917;
+  color: #ffff;
+  border-radius: 2rem;
+  font-size: 2rem;
+  border: none;
+  outline: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.updateUserContainer_Wrapper_updateProfileEmailAndUsername {
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+  bottom: 0%;
+  right: 0%;
+  background-color: #000000bd;
+  position: fixed;
+  z-index: 20;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  display: none;
+}
+.updateUserContainer_Wrapper_updateProfileEmailAndUsername-Wrapper {
+  width: 30%;
+  height: 40%;
+  background-color: #fff;
+  padding: 0rem 1rem;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.updateUserContainer_Wrapper_updateProfileEmailAndUsername-Wrapper form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+  /* align-items: center; */
+}
+.updateUserContainer_Wrapper_updateProfileEmailAndUsername-Wrapper form input {
+  width: 90%;
+  height: 20%;
+  border-radius: 20px;
+  padding: 0rem 0.5rem;
+  font-size: 2rem;
+}
+.updateUserContainer_Wrapper_updateProfileEmailAndUsername-Wrapper form button {
+  width: 40%;
+  height: 15%;
+  background-color: #1a8917;
+  color: #fff;
+  font-size: 2rem;
+  border-radius: 2rem;
+  border: none;
+  outline: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  font-family: "GT Super Ds Trial", sans-serif;
+}
+.updateUserContainer_Wrapper_updateProfileEmailAndUsername-Wrapper form h2 {
+  font-size: 2rem;
+  font-family: "GT Super Ds Trial", sans-serif;
+}
+.close {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  width: 10%;
+  height: 10%;
+  /* background-color: antiquewhite; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  font-family: "GT Super Ds Trial", sans-serif;
+}

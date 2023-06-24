@@ -1,0 +1,44 @@
+<% include ./partials/header.ejs %>
+<div class="updateUserContainer">
+    <div class="updateUserContainer-Wrapper">
+     
+       <div class="updateUserContainer_Wrapper-updateProfileSection">
+          <div class="updateUserContainer_Wrapper_updateProfileSection-setting">
+                <h1>Account Details</h1>
+          </div>
+          <div class="updateUserContainer_Wrapper_updateProfileSection_form">
+              <form action="/profile" method="post" enctype="multipart/form-data">
+                    <div class="updateUserContainer_Wrapper_updateProfileSection_form-heading"><h2>Photo</h2></div>
+                   <div class="updateUserContainer_Wrapper_updateProfileSection_form_form-data">
+                       <div class="updateUserContainer_Wrapper_updateProfileSection_form_form-data-profilePhoto">
+                            <img src="/docsPics/<%=user.pic%>"alt="">
+                       </div>
+                       <label for="file">Update</label>
+                       <!-- <button id="email">Email</button> -->
+                       <h4 id="showTheBox">Update Email and Username</h4>
+                       <input type="file" id="file" name="image">
+                   </div>
+                   <div class="updateUserContainer_Wrapper_updateProfileSection_form-textArea">
+                        <textarea name="bio" placeholder="bio"   cols="30" rows="10"><%=user.bio%></textarea>
+                   </div>
+                   <div class="updateUserContainer_Wrapper_updateProfileSection_form-button">
+                       <button>Save</button>
+                   </div>
+              </form>
+          </div>
+          <div class="updateUserContainer_Wrapper_updateProfileEmailAndUsername">
+               <div class="updateUserContainer_Wrapper_updateProfileEmailAndUsername-Wrapper">
+                   <form action="/updateEmailUsername" method="post">
+                       <h2>Update Other Details</h2>
+                       <input type="text" placeholder="Enter the new  Username" name="username" value="<%=user.username%>">
+                       <input type="email" placeholder="Enter the new Email" name="email" value="<%=user.email%>">
+                       <button>Save</button>
+                   </form>
+                   <div class="close"><i class="ri-close-line"></i></div>
+               </div>
+          </div>
+       </div>
+       <% include ./partials/sideNav.ejs %>
+    </div>
+</div>
+<% include ./partials/footer.ejs %>

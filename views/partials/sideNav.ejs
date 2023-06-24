@@ -1,0 +1,38 @@
+<div class="profile_Container_Wrapper_SideNav">
+    <div class="profile_Container_Wrapper_SideNav-userProfilePhoto_Wrapper">
+       <div class="profile_Container_Wrapper_SideNav_userProfilePhoto_Wrapper-userPhoto">
+            <img src="/docsPics/<%=user.pic%>" alt="">
+       </div>
+       <div class="profile_Container_Wrapper_SideNav-userProfilePhoto_Wrapper-name">
+           <h1><%=user.username%></h1>
+       </div>
+    </div>
+    <div class="profile_Container_Wrapper_SideNav-editLink">
+          <a href="/updateUser">edit profile</a>
+          <a style="color: red;" href="/logout">Log Out</a>
+    </div>
+    <div class="profile_Container_Wrapper_SideNav-descriptionCreatedDocsList">
+        <div class="profile_Container_Wrapper_SideNav_description-paragraphSection">
+            <p><%=user.bio%></p>
+        </div>
+        <div class="profile_Container_Wrapper_SideNav_description-List">
+            <h1>Created Docs</h1>
+           <ul>
+              <%if(userdocsCreated.createdDocs.length==0){%>
+                  <h1>No Docs Created</h1>
+              <%}else{%>
+                   <%userdocsCreated.createdDocs.forEach(function(elem){%>
+                      <li>
+                          <h4><%=elem.docstitle.substring(0,50)%>...</h4>
+                          <div class="list_links">
+                               <a href="/edit/<%=elem._id%>" id="edit"><i class="ri-edit-line"></i></a>
+                               <a href="/delete/<%=elem._id%>" id="delete"><i class="ri-delete-bin-line"></i></a>
+                          </div>
+                      </li>
+                   <%})%>  
+              <%}%>
+              
+           </ul>
+        </div>
+    </div>
+</div>

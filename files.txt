@@ -1,0 +1,158 @@
+<!-- <a href="/docsDetail/<%=elem._id%>">
+<div class="HomePage_MainPage_Container_Wrapper_Box-Section">
+   <div class="HomePage_MainPage_Container_Wrapper_Box_Section-docsDetail">
+       <div class="HomePage_MainPage_Container_Wrapper_Box_Section_docsDetail-userheading">
+           <div class="HomePage_MainPage_Container_Wrapper_Box_Section_docsDetail-userPhoto"><img src="" alt=""></div>
+           <div class="HomePage_MainPage_Container_Wrapper_Box_Section_docsDetail-userHeading">
+               <h6><%=user.username%></h6>
+           </div>
+       </div>
+       <div class="HomePage_MainPage_Container_Wrapper_Box_Section_docsDetail-ContentTitle">
+           <h1><%=elem.docstitle%></h1>
+       </div>
+       <div class="HomePage_MainPage_Container_Wrapper_Box_Section_docsDetail-homepageContent">
+           <p><%=elem.docsContent.substring(0,300)%></p>
+       </div>
+       <div class="HomePage_MainPage_Container_Wrapper_Box_Section_docsDetail-icons">
+           <a href="/like/<%=elem._id%>" id="heart"><i class="ri-heart-line"></i></a>
+           <a href="/save/<%=elem._id%>"><i class="ri-bookmark-line" id="save"></i></a>
+       </div>
+  </div>
+  <div class="HomePage_MainPage_Container_Wrapper_Box_Section-docsPhoto">
+   <img src="/docsPics/<%=elem.docsPic%>" alt="">
+ </div>           
+</div> 
+ </a>-->
+ /* .HomePage_MainPage_Container_Wrapper_Box-Section{
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    height: 60%;
+    padding: 0rem 1rem;
+    border-bottom: 2px solid #000;
+  }
+  .HomePage_MainPage_Container_Wrapper_Box_Section-docsDetail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    height: 100%;
+    
+  }
+  .HomePage_MainPage_Container_Wrapper_Box_Section-docsDetail>a{
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    text-decoration: none;
+    color: #000;
+  }
+  .HomePage_MainPage_Container_Wrapper_Box_Section_docsDetail-userheading{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    height: 20%;
+    padding: 0rem 1rem ;
+  }
+  .HomePage_MainPage_Container_Wrapper_Box_Section_docsDetail-userPhoto{
+    width: 10%;
+    height: 80%;
+    border-radius: 50%;
+  }
+  .HomePage_MainPage_Container_Wrapper_Box_Section_docsDetail-userPhoto img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+  }
+  .HomePage_MainPage_Container_Wrapper_Box_Section_docsDetail-userHeading{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .HomePage_MainPage_Container_Wrapper_Box_Section_docsDetail-userHeading h6{
+    font-size: 2.5rem;
+    font-weight: 400;
+    font-family: 'GT Super Ds Trial', sans-serif;
+  }
+  .HomePage_MainPage_Container_Wrapper_Box_Section-docsPhoto{
+    width: 30%;
+    height: 100%;
+    padding: 3rem 3rem;
+  }
+  .HomePage_MainPage_Container_Wrapper_Box_Section-docsPhoto img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    object-fit: fill;
+    border-radius: 2rem;
+  }
+  .HomePage_MainPage_Container_Wrapper_Box_Section_docsDetail-ContentTitle{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.5rem;
+    padding: 0rem 1rem;
+    display: flex;
+    align-items: center;
+    font-family: 'GT Super Ds Trial', sans-serif;
+  }
+  .HomePage_MainPage_Container_Wrapper_Box_Section_docsDetail-homepageContent{
+    width: 100%;
+    height: 40%;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0.5rem;
+  }
+  .HomePage_MainPage_Container_Wrapper_Box_Section_docsDetail-homepageContent>p{
+    font-size: 2.0rem;
+    padding: 1rem 1rem;
+    font-family: 'Oswald', sans-serif;
+  }
+  .HomePage_MainPage_Container_Wrapper_Box_Section_docsDetail-icons{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 15%;
+    background-color: #0d45a5;
+    gap: 2rem;
+  }
+  .HomePage_MainPage_Container_Wrapper_Box_Section_docsDetail-icons #heart{
+    padding: 1rem 1rem;
+    font-size: 3rem;
+    font-weight: 200;
+    color: #444;
+    text-decoration: none;
+    width: 5%;
+    height: 90%;
+  }
+  .HomePage_MainPage_Container_Wrapper_Box_Section_docsDetail-icons #save{
+    padding: 1rem 1rem;
+    font-size: 3rem;
+    font-weight: 200;
+    color: #444;
+    text-decoration: none;
+    width: 5%;
+    height: 90%;
+  }
+  .HomePage_MainPage_Container_Wrapper_Box_Section_docsDetail-icons .other_Icon{
+    width: 20%;
+    height: 90%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 3rem;
+    font-size: 3rem;
+    color: #444;
+  }
+  .HomePage_MainPage_Container_Wrapper_Box_Section_docsDetail-icons .other_Icon a{
+    text-decoration: none;
+    color: #444;
+  } */

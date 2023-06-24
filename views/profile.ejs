@@ -1,0 +1,36 @@
+<% include ./partials/header.ejs %>
+  <div class="profile_Container">
+    <div class="profile_Container-Wrapper">
+      <div class="profile-Container-Wrapper-StoriesSection">
+           <div class="profile_Container_Wrapper_StoriesSection-Username">
+               <h1><%=user.username%></h1>
+                <h2>SAVED POSTS</h2>
+          </div>
+           <%user.saveDocs.forEach(function(elem){%>
+               <a href="/docsDetail/<%=elem._id%>" class="profile_Container_Wrapper_StoriesSection-dynamicSection">
+                    <div class="profile_Container_Wrapper_StoriesSection_dynamicSection-content">
+                       <!-- <div class="profile_Container_Wrapper_StoriesSection-dynamicSection_content-details">
+                           <div class="profile_Container_Wrapper_StoriesSection-dynamicSection_content_details-userPhoto">
+                                <img src="" alt="">
+                           </div>
+                           <div class="profile_Container_Wrapper_StoriesSection-dynamicSection_content_details-username">
+                                <h1>Docs User</h1>
+                           </div>
+                       </div> -->
+                       <div class="profile_Container_Wrapper_StoriesSection_dynamicSection-story">
+                           <div class="profile_Container_Wrapper_StoriesSection_dynamicSection_story-heading"><h1><%=elem.docstitle%></h1></div>
+                            <div class="profile_Container_Wrapper_StoriesSection_dynamicSection_story-paragraph"><p><%=elem.docsContent.substring(0,196)%></p></div>
+                       </div>
+                      
+                    </div>
+                    <div class="profile-Container-Wrapper-StoriesSection_dynamicSection-UploadPhoto">
+                         <img src="/docsPics/<%=elem.docsPic%>" alt="">
+                    </div>
+                </a>
+           <%})%>
+         
+      </div>
+      <% include ./partials/sideNav.ejs %>
+    </div>
+  </div>
+<% include ./partials/footer.ejs %>

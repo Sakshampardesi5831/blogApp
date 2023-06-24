@@ -1,0 +1,28 @@
+<% include ./partials/header.ejs %>
+<div class="editDocs_Container">
+      <div class="editDocs_Container-Wrapper">
+         <div class="editDocs_Container-Wrapper-formSection">
+            <form action="/updateDocs/<%=id%>" method="post" enctype="multipart/form-data">
+                <div class="editDocs_Container-Wrapper-formSection-updatePoster">
+                    <div class="editDocs_Container-Wrapper_formSection_updatePoster-photo">
+                       <img src="/docsPics/<%=editDocs.docsPic%>" alt="">
+                    </div>
+                    <label for="file">Update</label>
+                    <input type="file" id="file" name="image">
+                </div>
+                <div class="editDocs_Container-Wrapper-formSection-titleAndParagraph">
+                     <div class="editDocs_Container-Wrapper-formSection_titleAndParagraph-title">
+                          <input type="text" placeholder="Update the title" value="<%=editDocs.docstitle%>" name="title">
+                     </div>
+                     <div class="editDocs_Container-Wrapper-formSection_titleAndParagraph-paragraph">
+                         <textarea name="para"  placeholder="Update your content" id="" cols="30" rows="10"><%=editDocs.docsContent%></textarea>
+                     </div>
+                </div>
+                <div class="button"><button>Publish</button></div>
+            </form>
+         </div>
+         <% include ./partials/sideNav.ejs %>
+      </div>
+</div>
+
+<% include ./partials/footer.ejs %>
